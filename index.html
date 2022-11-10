@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="content">
+          <img class="bubble" src="./images/circle.svg" alt="" />
+          <h1 class="content__title">User research made easy and fun.</h1>
+          <h2 class="content__pretitle">Start testing in minutes !</h2>
+          <h3 class="content__subtitle">
+            Already have an account? <a href="#" target="blank">Log in</a>
+          </h3>
+          <div class="images">
+            <img src="./images/Instagram.svg" alt="Instagram" />
+            <img src="./images/Twitter.svg" alt="Twitter" />
+            <img src="./images/Google.svg" alt="Google" />
+          </div>
+        </div>
+        <div class="flexible">
+          <form action="https://echo.htmlacademy.ru/" method="post">
+            <button class="with-google">
+              <img
+                width="52"
+                height="52"
+                src="./images/google-icon.svg"
+                alt=""
+              />
+              Sign up with Google
+            </button>
+            <div class="line">
+              <div class="liniya"></div>
+              <p>or</p>
+            </div>
+            <div class="first-box">
+              <div class="inputs">
+                <input
+                  class="labelcha"
+                  id="firstname"
+                  type="text"
+                  required
+                  name="firstname"
+                />
+                <label class="labelcha" for="firstname">First name</label>
+              </div>
+              <div class="inputs">
+                <input id="lastname" type="text" required name="lastname" />
+                <label for="lastname">Last name</label>
+              </div>
+            </div>
+            <div class="email inputs">
+              <input type="email" name="email" id="email" required />
+              <label for="email">Email</label>
+            </div>
+            <div class="password inputs">
+              <input type="password" name="password" id="password" required />
+              <label for="password">Password</label>
+            </div>
+            <div class="check">
+              <input type="checkbox" />
+              <p>
+                I agree to the <a href="#"> Terms of Service </a> and
+                <a href="#">Privacy Notice</a>
+              </p>
+            </div>
+            <button class="btn" type="submit">Sign me up !</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

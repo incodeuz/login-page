@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.content {
+  position: relative;
+  flex: 1;
+}
+
+.flexible {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 588px;
+}
+
+.bubble {
+  position: absolute;
+  z-index: -1;
+  top: -300px;
+  left: -400px;
+}
+
+.content__title {
+  width: 397px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 82px;
+  margin-bottom: 80px;
+  color: #0a3749;
+}
+
+.content__pretitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #000000;
+  margin-bottom: 91px;
+}
+
+.content__subtitle {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
+  margin-bottom: 108px;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 88px;
+}
+
+.liniya {
+  width: 100%;
+  border: 1px solid #000000;
+}
+
+.line > p {
+  position: absolute;
+  background-color: white;
+  padding: 0 5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+
+  color: #000000;
+}
+
+.with-google {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 33px;
+  color: #000000;
+  background: #ffffff;
+  border: 2px solid #868091;
+  border-radius: 7px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 0;
+  margin-bottom: 73px;
+}
+
+.with-google > img {
+  margin-right: 58px;
+}
+
+.first-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  position: relative;
+  margin-bottom: 37px;
+}
+
+.inputs > input {
+  background: #ffffff;
+  border: 0.7px solid #000000;
+  border-radius: 4px;
+  height: 60px;
+  padding-left: 10px;
+}
+
+.inputs > label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  position: absolute;
+  color: #0a3749;
+  top: 15px;
+  left: 10px;
+}
+
+.inputs input:focus + label,
+.inputs input:valid + label {
+  position: absolute;
+  top: -17px;
+  background-color: white;
+  padding: 5px;
+}
+
+.inputs input:active + label {
+  position: absolute;
+  top: -17px;
+}
+
+.inputs input:focus:invalid {
+  outline: 1px solid red;
+}
+
+.email {
+  width: 100%;
+}
+.password {
+  width: 100%;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 55px;
+}
+
+.check > input {
+  margin-right: 28px;
+}
+
+.check > p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.btn {
+  width: 100%;
+  background: #ffe061;
+  border-radius: 7px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 33px;
+  /* identical to box height */
+  padding: 16px 0;
+  color: #0a3749;
+}
